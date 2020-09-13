@@ -1,0 +1,16 @@
+
+        # comment
+ # comment
+
+all : test1
+test1 : test1.o
+ # a
+	gcc -o test1 test1.o
+test1.o : test1.c common.h
+
+	gcc -c test1.c
+## coommment
+
+clean :
+	echo cleaning
+	rm test1.o test1
